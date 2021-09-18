@@ -33,7 +33,7 @@ class TransactionsResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'TransactionsResponseData'
+        'data': 'object'
     }
 
     attribute_map = {
@@ -57,7 +57,7 @@ class TransactionsResponse(object):
 
 
         :return: The data of this TransactionsResponse.  # noqa: E501
-        :rtype: TransactionsResponseData
+        :rtype: object
         """
         return self._data
 
@@ -67,7 +67,7 @@ class TransactionsResponse(object):
 
 
         :param data: The data of this TransactionsResponse.  # noqa: E501
-        :type: TransactionsResponseData
+        :type: object
         """
         if self._configuration.client_side_validation and data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501

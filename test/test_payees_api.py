@@ -16,7 +16,7 @@ from __future__ import absolute_import
 import unittest
 
 import ynab
-from ynab.payees_api import PayeesApi  # noqa: E501
+from ynab.api.payees_api import PayeesApi  # noqa: E501
 from ynab.rest import ApiException
 
 
@@ -24,7 +24,7 @@ class TestPayeesApi(unittest.TestCase):
     """PayeesApi unit test stubs"""
 
     def setUp(self):
-        self.api = ynab.payees_api.PayeesApi()  # noqa: E501
+        self.api = ynab.api.payees_api.PayeesApi()  # noqa: E501
 
     def tearDown(self):
         pass

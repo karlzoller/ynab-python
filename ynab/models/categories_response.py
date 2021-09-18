@@ -33,7 +33,7 @@ class CategoriesResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'CategoriesResponseData'
+        'data': 'object'
     }
 
     attribute_map = {
@@ -57,7 +57,7 @@ class CategoriesResponse(object):
 
 
         :return: The data of this CategoriesResponse.  # noqa: E501
-        :rtype: CategoriesResponseData
+        :rtype: object
         """
         return self._data
 
@@ -67,7 +67,7 @@ class CategoriesResponse(object):
 
 
         :param data: The data of this CategoriesResponse.  # noqa: E501
-        :type: CategoriesResponseData
+        :type: object
         """
         if self._configuration.client_side_validation and data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501

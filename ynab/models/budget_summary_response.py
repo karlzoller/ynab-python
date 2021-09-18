@@ -33,7 +33,7 @@ class BudgetSummaryResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'BudgetSummaryResponseData'
+        'data': 'object'
     }
 
     attribute_map = {
@@ -57,7 +57,7 @@ class BudgetSummaryResponse(object):
 
 
         :return: The data of this BudgetSummaryResponse.  # noqa: E501
-        :rtype: BudgetSummaryResponseData
+        :rtype: object
         """
         return self._data
 
@@ -67,7 +67,7 @@ class BudgetSummaryResponse(object):
 
 
         :param data: The data of this BudgetSummaryResponse.  # noqa: E501
-        :type: BudgetSummaryResponseData
+        :type: object
         """
         if self._configuration.client_side_validation and data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
